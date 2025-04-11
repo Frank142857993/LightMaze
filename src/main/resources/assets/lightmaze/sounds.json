@@ -1,0 +1,12 @@
+{
+  "block.lm_portal.ambient": {
+    "category": "block",
+    "subtitle": "subtitles.block.lm_portal.ambient",
+    "sounds": [{"name": "lightmaze:block/lm_portal/ambient", "stream": true}]
+  },
+  "block.lm_portal.ambient2": {
+    "category": "block",
+    "subtitle": "subtitles.block.lm_portal.ambient",
+    "sounds": [{"name": "lightmaze:block/lm_portal/ambient2", "stream": true}]
+  }
+}

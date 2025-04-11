@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "textures": {"all": "lightmaze:blocks/ores/foundation_stone_ore_quartz"}
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{"transform":  "forge:default-block"}]
+  }
+}

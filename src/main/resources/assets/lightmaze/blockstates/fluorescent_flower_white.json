@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cross",
+    "textures": {"cross": "lightmaze:blocks/fluorescent_flower_white"}
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{"transform":  "forge:default-item"}]
+  }
+}

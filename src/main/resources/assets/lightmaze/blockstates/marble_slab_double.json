@@ -1,0 +1,7 @@
+{
+  "variants":{
+    "variant=default":{
+      "model":"lightmaze:marble_slab_double"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "lightmaze:blocks/trees/sapling_silver"
+  }
+}

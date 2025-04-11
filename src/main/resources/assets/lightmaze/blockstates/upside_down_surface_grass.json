@@ -1,0 +1,6 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {"model": "lightmaze:upside_down_surface_grass"}
+  }
+}

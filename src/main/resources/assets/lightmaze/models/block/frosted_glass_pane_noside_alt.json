@@ -1,0 +1,6 @@
+{
+    "parent": "block/pane_noside_alt",
+    "textures": {
+        "pane": "lightmaze:blocks/frosted_glass"
+    }
+}
