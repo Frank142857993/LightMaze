@@ -43,13 +43,14 @@ public class BlockFlowerPotLM extends BlockContainer implements IHasModel {
     private final String name = "evergrowth_flower_pot";
 
     public BlockFlowerPotLM(){
-        super(Material.CIRCUITS, MapColor.BROWN_STAINED_HARDENED_CLAY);
+        super(Material.CIRCUITS, MapColor.PURPLE_STAINED_HARDENED_CLAY);
         this.hasTileEntity = true;
         //this.setDefaultState(this.blockState.getBaseState().withProperty(CONTENTS, EnumFlowerType.EMPTY).withProperty(LEGACY_DATA, Integer.valueOf(0)));
         this.setDefaultState(this.blockState.getBaseState().withProperty(CONTENTS, EnumFlowerType.EMPTY).withProperty(POWERED, false));
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabInit.TAB_LM);
+        //this.setLightLevel(1.0F);
         BlockInit.REGISTER_BLOCKS.add(this);
         ItemInit.REGISTER_ITEMS.add(new ItemBlock(this).setRegistryName(name));
     }
@@ -180,7 +181,7 @@ public class BlockFlowerPotLM extends BlockContainer implements IHasModel {
                     }
                 }
                 tileentityflowerpot.setItemStack(ItemStack.EMPTY);
-                BlockInit.EVERGROWTH_FLOWER_POT.turnOffPower(worldIn, pos);
+                this.turnOffPower(worldIn, pos);
             }
 
             tileentityflowerpot.markDirty();

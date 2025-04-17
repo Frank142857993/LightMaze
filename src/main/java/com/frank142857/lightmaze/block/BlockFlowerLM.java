@@ -3,7 +3,6 @@ package com.frank142857.lightmaze.block;
 import com.frank142857.lightmaze.LightMaze;
 import com.frank142857.lightmaze.init.*;
 import com.frank142857.lightmaze.util.interfaces.IHasModel;
-import com.frank142857.lightmaze.util.particle.ParticleSpawner;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;

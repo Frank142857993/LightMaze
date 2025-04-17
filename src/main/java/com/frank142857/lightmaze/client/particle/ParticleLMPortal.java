@@ -1,4 +1,4 @@
-package com.frank142857.lightmaze.util.particle;
+package com.frank142857.lightmaze.client.particle;
 
 import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.particle.Particle;

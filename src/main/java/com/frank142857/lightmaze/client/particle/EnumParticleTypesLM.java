@@ -1,4 +1,4 @@
-package com.frank142857.lightmaze.util.particle;
+package com.frank142857.lightmaze.client.particle;
 
 import com.google.common.collect.Maps;
 
