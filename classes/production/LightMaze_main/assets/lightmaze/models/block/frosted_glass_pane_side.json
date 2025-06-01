@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_side",
+    "textures": {
+        "edge": "lightmaze:blocks/frosted_glass_pane_top",
+        "pane": "lightmaze:blocks/frosted_glass"
+    }
+}

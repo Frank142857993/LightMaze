@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " # ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "lightmaze:silver_planks"
+    }
+  },
+  "result": {
+    "item": "lightmaze:silver_wood_stick",
+    "count": 6
+  }
+}

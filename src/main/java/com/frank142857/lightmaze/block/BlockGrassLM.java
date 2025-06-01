@@ -12,6 +12,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -48,24 +49,26 @@ public class BlockGrassLM extends Block implements IHasModel, IGrowable, IPlantC
         LightMaze.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
-    public void updateTick(World world, BlockPos p_updateTick_2_, IBlockState p_updateTick_3_, Random p_updateTick_4_) {
+    public void updateTick(World world, BlockPos pos, IBlockState state, Random rand) {
         if (!world.isRemote) {
-            if (!world.isAreaLoaded(p_updateTick_2_, 3)) {
+            if (!world.isAreaLoaded(pos, 3)) {
                 return;
             }
 
-            if (world.getLightFromNeighbors(p_updateTick_2_.up()) < 4 && world.getBlockState(p_updateTick_2_.up()).getLightOpacity(world, p_updateTick_2_.up()) > 2) {
-                world.setBlockState(p_updateTick_2_, BlockInit.SURFACE_DIRT.getDefaultState());
-            } else if (world.getLightFromNeighbors(p_updateTick_2_.up()) >= 9) {
+            if (world.getLightFromNeighbors(pos.up()) < 4 && world.getBlockState(pos.up()).getLightOpacity(world, pos.up()) > 2) {
+                world.setBlockState(pos, BlockInit.SURFACE_DIRT.getDefaultState());
+            } else if (world.getLightFromNeighbors(pos.up()) >= 9) {
                 for(int i = 0; i < 4; ++i) {
-                    BlockPos blockpos = p_updateTick_2_.add(p_updateTick_4_.nextInt(3) - 1, p_updateTick_4_.nextInt(5) - 3, p_updateTick_4_.nextInt(3) - 1);
+                    BlockPos blockpos = pos.add(rand.nextInt(3) - 1, rand.nextInt(5) - 3, rand.nextInt(3) - 1);
                     if (blockpos.getY() >= 0 && blockpos.getY() < 256 && !world.isBlockLoaded(blockpos)) {
                         return;
                     }
 
                     IBlockState iblockstate = world.getBlockState(blockpos.up());
                     IBlockState iblockstate1 = world.getBlockState(blockpos);
-                    if (iblockstate1.getBlock() == BlockInit.SURFACE_DIRT && world.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(world, p_updateTick_2_.up()) <= 2) {
+                    if (iblockstate1.getBlock() == BlockInit.SURFACE_DIRT && world.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(world, pos.up()) <= 2
+                            && iblockstate.getBlock() != Blocks.WATER && iblockstate.getBlock() != Blocks.FLOWING_WATER
+                            && iblockstate.getBlock() != Blocks.LAVA && iblockstate.getBlock() != Blocks.FLOWING_LAVA) {
                         world.setBlockState(blockpos, BlockInit.SURFACE_GRASS.getDefaultState());
                     }
                 }

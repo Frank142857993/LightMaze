@@ -1,8 +1,10 @@
 package com.frank142857.lightmaze.util.handlers;
 
 import com.frank142857.lightmaze.block.teleporter.BlockPortalLM;
+import com.frank142857.lightmaze.client.renderer.tileentity.TileEntityItemDisplayerRenderer;
 import com.frank142857.lightmaze.init.BlockInit;
 import com.frank142857.lightmaze.init.ItemInit;
+import com.frank142857.lightmaze.tileentity.TileEntityItemDisplayer;
 import com.frank142857.lightmaze.util.interfaces.IHasModel;
 import com.frank142857.lightmaze.world.gen.WorldGenOreLM;
 import net.minecraft.block.Block;
@@ -12,6 +14,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -40,6 +43,8 @@ public class RegistryHandler {
                 ((IHasModel)item).registerModel();
             }
         }
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityItemDisplayer.class, new TileEntityItemDisplayerRenderer());
     }
     public static void addSmelting(Item input, Item output, float xp){
         addSmelting(input, new ItemStack(output), xp);

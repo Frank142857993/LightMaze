@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "stage=0": { "model": "lightmaze:silver_sapling" },
+    "stage=1": { "model": "lightmaze:silver_sapling" }
+  }
+}

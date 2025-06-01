@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "lightmaze:blocks/trees/log_silver_top",
+    "side": "lightmaze:blocks/trees/log_silver"
+  }
+}

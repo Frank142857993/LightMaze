@@ -45,6 +45,10 @@ public class BlockInit {
 
     public static final BlockMetalLM SHADOW_METAL_BLOCK = new BlockMetalLM("shadow_metal_block", Material.IRON, 2);
 
+    public static final BlockItemDisplayer ITEM_DISPLAYER = new BlockItemDisplayer();
+
+
+
     public static final BlockBushLM GLOWING_HERBS = (BlockBushLM) (new BlockBushLM().setLightLevel(0.067F));
     public static final BlockFlowerLM FLUORESCENT_FLOWER_RED = (BlockFlowerLM) new BlockFlowerLM("fluorescent_flower_red", MapColor.RED).setLightLevel(0.667F);
     public static final BlockFlowerLM FLUORESCENT_FLOWER_GREEN = (BlockFlowerLM) new BlockFlowerLM("fluorescent_flower_green", MapColor.GREEN).setLightLevel(0.667F);

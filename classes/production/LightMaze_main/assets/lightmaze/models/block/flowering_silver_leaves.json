@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lightmaze:blocks/trees/flowering_leaves_silver"
+  }
+}
