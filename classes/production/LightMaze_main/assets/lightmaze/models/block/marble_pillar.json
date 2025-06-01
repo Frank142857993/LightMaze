@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "lightmaze:blocks/marble",
-    "side": "lightmaze:blocks/marble_pillar"
-  }
-}

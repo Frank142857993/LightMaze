@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "axis=y":  { "model": "lightmaze:marble_pillar" },
-    "axis=z":   { "model": "lightmaze:marble_pillar", "x": 90 },
-    "axis=x":   { "model": "lightmaze:marble_pillar", "x": 90, "y": 90 },
-    "axis=none": { "model": "minecraft:cube_all",
-      "textures": {"all": "lightmaze:blocks/marble"} }
-  }
-}

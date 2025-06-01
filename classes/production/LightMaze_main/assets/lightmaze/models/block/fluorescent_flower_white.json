@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "lightmaze:blocks/fluorescent_flower_white"
-  }
-}

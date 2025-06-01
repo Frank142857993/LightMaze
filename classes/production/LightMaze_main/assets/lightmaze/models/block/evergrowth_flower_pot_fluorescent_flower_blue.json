@@ -1,6 +1,0 @@
-{
-    "parent": "lightmaze:block/evergrowth_flower_pot_cross",
-    "textures": {
-        "plant": "lightmaze:blocks/fluorescent_flower_blue"
-    }
-}

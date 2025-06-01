@@ -1,7 +1,0 @@
-{
-  "parent": "lightmaze:block/tinted_cross_multi_layer",
-  "textures": {
-    "cross": "lightmaze:blocks/glowing_herbs",
-    "overlay": "lightmaze:blocks/glowing_herbs_overlay"
-  }
-}

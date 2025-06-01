@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "lightmaze:blocks/glowing_herbs",
-    "layer1": "lightmaze:blocks/glowing_herbs_overlay"
-  }
-}

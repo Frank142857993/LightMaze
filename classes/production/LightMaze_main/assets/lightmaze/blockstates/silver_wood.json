@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "axis=y":  { "model": "lightmaze:silver_log" },
-    "axis=z":   { "model": "lightmaze:silver_log", "x": 90 },
-    "axis=x":   { "model": "lightmaze:silver_log", "x": 90, "y": 90 },
-    "axis=none": { "model": "lightmaze:silver_bark" }
-  }
-}
